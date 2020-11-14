@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Kafka-Producer",
+		"_postman_id": "385b528c-7e63-1cd3-7b4c-acfcbea49aa1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Producer",
+			"request": {
+				"url": "http://localhost:8081/api/kafka/producer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Abhishek\",\n\t\"age\":\"22\",\n\t\"department\":\"HR\",\n\t\"salary\":20000,\n\t\"phoneNumber\": \"12345666\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6777b5f3-d97b-49a1-874e-be674be5149d",
+					"name": "Producer",
+					"originalRequest": {
+						"url": "http://localhost:8081/api/kafka/producer",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Abhishek\",\n\t\"age\":\"22\",\n\t\"department\":\"HR\",\n\t\"salary\":20000,\n\t\"phoneNumber\": \"12345666\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "29",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 14 Nov 2020 15:45:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1100,
+					"body": "Message Produced Successfully"
+				}
+			]
+		}
+	]
+}
