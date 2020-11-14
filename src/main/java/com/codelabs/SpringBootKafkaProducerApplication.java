@@ -22,6 +22,7 @@ public class SpringBootKafkaProducerApplication {
 		SpringApplication.run(SpringBootKafkaProducerApplication.class, args);
 	}
  
+	//configuring factory to serialize json because default serialization is for String.
 	@Bean 
 	public ProducerFactory<String, Employee> producerFactory(){
 		Map<String, Object> configs = new HashMap<>();
